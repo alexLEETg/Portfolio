@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis proyectos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            margin: auto;
+        }
+        .barraPrincipal {
+            overflow: hidden;
+            background-color: #461b1b;
+        }
+        .barraPrincipal a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    transition: all 200ms ease;
+}
+.barraPrincipal a:hover {
+    background-color: #9e5a5a;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+.contenedorFormulario {
+                padding: 50px 0;
+            }
+            .form{
+                display: flexbox;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .form textarea{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+    </style>
+</head>
+<body>
+    <div class="barraPrincipal">
+        <a href="{{url_for('index')}}">Inicio</a>
+        <a href="{{url_for('lenguajes')}}">Mis lenguajes programación</a>
+    </div>
+    <div class="contenedorFormulario">
+        <h1 class="titulo">Agregar proyecto</h1>
+        <form action="" method="post" class="form">
+            <input class="input"  type="text" name="id" id="" placeholder="ID">
+            <input class="input"  type="text" name="nombreproyecto" id="" placeholder="Nombre">
+            <textarea  class="input" name="descripcion" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+            <input class="input"  type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>

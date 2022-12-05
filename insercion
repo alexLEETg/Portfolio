@@ -1,0 +1,10 @@
+import db
+from sqlalchemy.orm import sessionmaker
+
+Session = sessionmaker(bind=db.engine)
+session = Session()
+
+lenguaje = db.Lenguaje(3, 'C++', 'Bell Laboratories')
+session.add(lenguaje)
+
+session.commit()

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body {
+            margin: auto;
+        }
+        .barraPrincipal {
+            overflow: hidden;
+            background-color: #461b1b;
+        }
+        .barraPrincipal a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    transition: all 200ms ease;
+}
+.barraPrincipal a:hover {
+    background-color: #9e5a5a;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+.contenedorTituloBienvenida {
+    padding: 50px 0;
+}
+    </style>
+</head>
+
+<body>
+    <div class="barraPrincipal">
+        <a href="{{url_for('lenguajes')}}">Mis lenguajes programación</a>
+        <a href="{{url_for('proyectos')}}">Mis proyectos</a>
+    </div>
+    <div class="contenedorTituloBienvenida">
+        <h1>Bienvenid@ a mi portfolio :)</h1>
+    </div>
+</body>
+</html>
